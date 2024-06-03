@@ -15,8 +15,8 @@
                 <div id="stripe"></div>
                 <div id="shadow"></div>
                 <div id="cvc-div">
-                    <label for="cvc"> CVC/CVV</label>
-                    <input id="cvc" placeholder="123" type="text" min-length="3" max-length="4">
+                    <label for="cvc">CVC/CVV</label>
+                    <input id="cvc" placeholder="123" type="text" min-length="3" max-length="4" required>
                 </div>
             </div>
             <div id="front">
@@ -26,18 +26,17 @@
                 </div>
                 <div id="num-div">
                     <label for="card-number">Card Number</label>
-                    <input type="text" id="card-number" placeholder="1234 2345 3456 4567" length="16">
+                    <input type="text" id="card-number" placeholder="1234 2345 3456 4567" length="16" required>
                 </div>
                 <div id="name-div">
                     <label for="cardholder">Card Holder</label>
-                    <input type="text" id="cardholder" placeholder="e.g. John Doe" />
+                    <input type="text" id="cardholder" placeholder="e.g. John Doe" required>
                 </div>
-
                 <div id="exp-div">
-                    <label for="exp">Expiration</label>
+                    <label for="exp-dates">Expiration</label>
                     <div id="exp-inputs">
-                        <input id="exp-month" type="text" placeholder="MM" length="2">
-                        <input id="exp-year" type="text" placeholder="YY" length="2">
+                        <input id="exp-month" type="text" placeholder="MM" length="2" required>
+                        <input id="exp-year" type="text" placeholder="YY" length="2" required>
                     </div>
                 </div>
             </div>
