@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Be The Good</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/btg-favicon.png">
+    <script src="scripts/aboutus.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/btg-logo.png" alt="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="projects.html">Current Projects</a>
+        </nav>
+    </header>
+    <main>
+        <div id="who-we-are">
+            <div>
+                <h1>Who we are</h1>
+                <img src="images/helping-hands.jpg" alt="image of holding hands">
+            </div>
+            <p>
+                <b>Be The Good</b> was established in 2023. This charity has been
+                operating under its former name, For the Love, since 2017.
+                Be the Good will continue to support underprivileged students
+                and families, as well as nursing home residents and other
+                community members who are often unseen and unheard.
+            </p>
+        </div>
+        <div id="how-you-can-help">
+            <div>
+                <h1>How you can help</h1>
+                <img src="images/smiling-group.jpg" alt="image of a smiling group">
+            </div>
+            <div id="hych-options">
+                <p class="quote">
+                    <b>"Never doubt that one person can make a difference."</b>
+                    <br>
+                    <i>- Ingrid Newark</i>
+                </p>
+                <section class="donate">
+                    <h2>Donate</h2>
+                    <p>
+                        Please visit our <a href="projects.html">Projects</a> page to learn about our current efforts.
+                        You can also donate materials for those projects or give money directly
+                        via our linked <a href="https://paypal.com" target="_blank">PayPal</a> or <a href="https://venmo.com" target="_blank">Venmo</a> accounts,
+                        or by donating directly <button id="donate">here</button>. Thank you for your interest!
+                    </p>
+                </section>
+                <section class="volunteer">
+                    <h2>Volunteer</h2>
+                    <p>
+                        We don't have a warehouse where volunteers are continuously needed,
+                        but there are often other opportunities for you to get involved.
+                        If you are interested in helping with special projects,
+                        like sorting donations after big events, delivering holiday banners
+                        to nursing homes, or wrapping Christmas presents, please reach out!
+                    </p>
+                </section>
+                <section class="drive">
+                    <h2>Start your own drive or collection project</h2>
+                    <p>
+                        Choose one of our projects and run with it!
+                        Involve your family, your neighbors, your co-workers,
+                        or your church community. Uniting for an important cause
+                        builds relationships and increases donations!
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div id="formContainer" class="hidden">
+            <div id="form">
+                <div id="back">
+                    <div id="stripe"></div>
+                    <div id="shadow"></div>
+                    <div id="cvc-div">
+                        <label for="cvc">CVC/CVV</label>
+                        <input id="cvc" placeholder="123" type="text" min-length="3" max-length="4" required>
+                    </div>
+                </div>
+                <div id="front">
+                    <span id="amount">Total: <b>$10.77</b></span>
+                    <div id="img-div">
+                        <img class="card-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lPSJMYXllciAxIiBpZD0iTGF5ZXJfMSIgdmlld0JveD0iMCAwIDYwIDYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMTAsLmNscy0xMSwuY2xzLTIsLmNscy02LC5jbHMtN3tmaWxsOm5vbmU7fS5jbHMtMXtjbGlwLXJ1bGU6ZXZlbm9kZDt9LmNscy0yLC5jbHMtNXtmaWxsLXJ1bGU6ZXZlbm9kZDt9LmNscy0ze2NsaXAtcGF0aDp1cmwoI2NsaXAtcGF0aCk7fS5jbHMtNHtjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgtMik7fS5jbHMtNXtmaWxsOiNmZTg2NTc7fS5jbHMtMTAsLmNscy0xMSwuY2xzLTZ7c3Ryb2tlOiNmZTg2NTc7fS5jbHMtMTAsLmNscy02e3N0cm9rZS1saW5lY2FwOnJvdW5kO30uY2xzLTEwLC5jbHMtMTEsLmNscy02LC5jbHMtN3tzdHJva2UtbGluZWpvaW46cm91bmQ7fS5jbHMtNntzdHJva2Utd2lkdGg6NHB4O30uY2xzLTd7c3Ryb2tlOiNlMDZjM2U7fS5jbHMtMTEsLmNscy03e3N0cm9rZS1saW5lY2FwOnNxdWFyZTt9LmNscy0xMCwuY2xzLTExLC5jbHMtN3tzdHJva2Utd2lkdGg6MnB4O30uY2xzLTh7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTQpO30uY2xzLTl7ZmlsbDojZmZkYzgyO308L3N0eWxlPjxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xLDQ2VjE4YTUsNSwwLDAsMSw1LTVINTRhNSw1LDAsMCwxLDUsNVY0NmE1LDUsMCwwLDEtNSw1SDZBNSw1LDAsMCwxLDEsNDZabTIsMGEzLDMsMCwwLDAsMywzSDU0YTMsMywwLDAsMCwzLTNWMThhMywzLDAsMCwwLTMtM0g2YTMsMywwLDAsMC0zLDNWNDZaTS0xOSw3MUg3OVYtN0gtMTlWNzFaIi8+PC9jbGlwUGF0aD48Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aC0yIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0yLDQ2YTQsNCwwLDAsMCw0LDRINTRhNCw0LDAsMCwwLDQtNFYxOGE0LDQsMCwwLDAtNC00SDZhNCw0LDAsMCwwLTQsNFY0NloiLz48L2NsaXBQYXRoPjxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoLTQiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTksMjlhMiwyLDAsMCwwLDIsMkgyMmEyLDIsMCwwLDAsMi0yVjIzYTIsMiwwLDAsMC0yLTJIMTFhMiwyLDAsMCwwLTIsMnY2WiIvPjwvY2xpcFBhdGg+PC9kZWZzPjx0aXRsZS8+PGcgY2xhc3M9ImNscy0zIj48ZyBjbGFzcz0iY2xzLTQiPjxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTIsNDZhNCw0LDAsMCwwLDQsNEg1NGE0LDQsMCwwLDAsNC00VjE4YTQsNCwwLDAsMC00LTRINmE0LDQsMCwwLDAtNCw0VjQ2WiIvPjwvZz48L2c+PGcgY2xhc3M9ImNscy00Ij48cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik0yLDQ2YTQsNCwwLDAsMCw0LDRINTRhNCw0LDAsMCwwLDQtNFYxOGE0LDQsMCwwLDAtNC00SDZhNCw0LDAsMCwwLTQsNFY0NloiLz48L2c+PGxpbmUgY2xhc3M9ImNscy03IiB4MT0iOSIgeDI9IjI4IiB5MT0iMzkiIHkyPSIzOSIvPjxsaW5lIGNsYXNzPSJjbHMtNyIgeDE9IjMyIiB4Mj0iNTEiIHkxPSIzOSIgeTI9IjM5Ii8+PGcgY2xhc3M9ImNscy04Ij48cmVjdCBjbGFzcz0iY2xzLTkiIGhlaWdodD0iMjAiIHdpZHRoPSIyNSIgeD0iNCIgeT0iMTYiLz48L2c+PHBhdGggY2xhc3M9ImNscy0xMCIgZD0iTTksMjlhMiwyLDAsMCwwLDIsMkgyMmEyLDIsMCwwLDAsMi0yVjIzYTIsMiwwLDAsMC0yLTJIMTFhMiwyLDAsMCwwLTIsMnY2WiIvPjxsaW5lIGNsYXNzPSJjbHMtMTEiIHgxPSIxOCIgeDI9IjE4IiB5MT0iMzEiIHkyPSIyMSIvPjxsaW5lIGNsYXNzPSJjbHMtMTEiIHgxPSI5IiB4Mj0iMTciIHkxPSIyNyIgeTI9IjI3Ii8+PGxpbmUgY2xhc3M9ImNscy0xMSIgeDE9IjE4IiB4Mj0iMjQiIHkxPSIyNSIgeTI9IjI1Ii8+PC9zdmc+" height="55px">
+                    </div>
+                    <div id="num-div">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234 2345 3456 4567" length="16" required>
+                    </div>
+                    <div id="name-div">
+                        <label for="cardholder">Card Holder</label>
+                        <input type="text" id="cardholder" placeholder="e.g. John Doe" required>
+                    </div>
+                    <div id="exp-div">
+                        <label for="exp-dates">Expiration</label>
+                        <div id="exp-inputs">
+                            <input id="exp-month" type="text" placeholder="MM" length="2" required>
+                            <input id="exp-year" type="text" placeholder="YY" length="2" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="submit">Submit</button>
+                <button id="close">X</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Be The Good 2024</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="aboutus.html">About Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb.png" alt="Facebook icon">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/x.png" alt="X icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

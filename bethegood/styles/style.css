@@ -136,3 +136,142 @@ h1 {
 #projects section h2 {
     color:#FFDE59;
 }
+#donate {
+    font-family: Nunito, Futura, sans-serif;
+    border: none;
+    background: none;
+    padding: 0;
+    color: #FFDE59;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 24px;
+}
+#form {
+    font-family: Nunito, Futura, sans-serif;
+    display: grid;
+    width: 500px;
+    height: 350px;
+    grid-template-rows: 300px 50px;
+    text-transform: uppercase;
+    margin: auto;
+    position: relative;
+    #back, #front {
+        position: absolute;
+        width: 400px;
+        height: 250px;
+        border-radius: 15px;
+        padding: 20px 30px 0;
+        background-color: #03989E;
+        box-sizing: border-box;
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: white;
+    }
+    #back {
+        top: 50px;
+        right: 0;
+        z-index: 0;
+        #shadow {
+            position: absolute;
+            width: 303px;
+            height: 203px;
+            left: 0;
+            top: 0;
+            border-radius: 15px 0px;
+            background-color: #124446aa;
+            z-index: 0;
+        }
+        #stripe {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #173436;
+        }
+        #cvc-div {
+            position: absolute;
+            display: grid;
+            grid-auto-flow: row;
+            right: 20px;
+            bottom: 70px;
+            width: 50px;
+            & input {
+                margin: 20px 0 0;
+            }
+        }
+    }
+    #front {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 2fr 1fr;
+        #amount {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        #img-div {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 100%;
+            & img {
+                position: absolute;
+                top: 0;
+                right: 15px;
+            }
+        }
+        #num-div {
+            grid-area: 2 / 1 / 3 / 3;
+            display: grid;
+            grid-auto-flow: row;
+        }
+        #name-div {
+            grid-area: 3 / 1 / 4 / 2;
+            display: grid;
+            grid-auto-flow: row;
+        }
+        #exp-div {
+            grid-area: 3 / 2 / 4 / 3;
+            display: grid;
+            #exp-inputs {
+                display: grid;
+                grid-auto-flow: column;
+            }
+        }
+    }
+    & input {
+        font-family: Nunito, Futura, sans-serif;
+        border: none;
+        outline: none;
+        background-color: #25bac0aa;
+        color: white;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 25px;
+        line-height: 25px;
+        padding: 10px;
+        width: 85%;
+        &::-webkit-input-placeholder {
+            color: #ffffff77;
+            font-family: Nunito, Futura, sans-serif;
+            letter-spacing: 1px;
+            font-size: 10px;
+        }
+    }
+    #submit {
+        grid-row: 2/3;
+        height: 80%;
+        margin: auto 0 auto 400px;
+    }
+    #close {
+        grid-row: 1/2;
+        height: 10%;
+        margin: 0 0 auto 460px;
+    }
+}
+#formContainer {
+    background-color: #333333aa;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40vh
+}
+.hidden {
+    display: none !important;
+}
